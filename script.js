@@ -1,4 +1,4 @@
-const board = Array(9).fill(null);
+const board = Array(9).fill(nul);
 let currentPlayer = 'X'; // Human starts
 let gameActive = true;
 let status = document.getElementById('status');
