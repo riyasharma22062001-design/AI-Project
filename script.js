@@ -11,6 +11,7 @@ const winningConditions = [
     [0, 4, 8], [2, 4, 6] // diagonals
 ];
 
+
 function checkWinner(player) {
     return winningConditions.some(condition => {
         return condition.every(index => board[index] === player);
