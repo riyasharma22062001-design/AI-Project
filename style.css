@@ -69,7 +69,6 @@ h1 {
     background: #2ecc71 !important;
     color: white;
 }
-
 #restart {
     background: #667eea;
     color: white;
@@ -80,7 +79,6 @@ h1 {
     cursor: pointer;
     transition: background 0.3s;
 }
-
 #restart:hover {
     background: #5a67d8;
 }
