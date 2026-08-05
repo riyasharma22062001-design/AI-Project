@@ -40,7 +40,6 @@ function updateStatus() {
 
 function highlightWinner(player)
 {
-    // Find winning combo and highlight
     for (let condition of winningConditions) {
         if (condition.every(index => board[index] === player)) {
             condition.forEach(index => cells[index].classList.add('winner'));
@@ -48,7 +47,6 @@ function highlightWinner(player)
         }
     }
 }
-
 function handleClick(e) {
     const cell = e.target;
     const index = cell.dataset.index;
@@ -120,7 +118,6 @@ function aiMove() {
     currentPlayer = 'X';
     updateStatus();
 }
-
 function restartGame() {
     board.fill(null);
     currentPlayer = 'X';
@@ -131,8 +128,6 @@ function restartGame() {
         cell.className = 'cell';
     });
 }
-
 cells.forEach(cell => cell.addEventListener('click', handleClick));
 restartBtn.addEventListener('click', restartGame);
-
 updateStatus(); 
