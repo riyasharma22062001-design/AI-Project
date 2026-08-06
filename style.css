@@ -28,7 +28,6 @@ h1 {
     color: #667eea;
     margin-bottom: 1rem;
 }
-
 #board {
     display: grid;
     grid-template-columns: repeat(3, 120px);
@@ -36,7 +35,6 @@ h1 {
     margin: 0 auto 1rem;
     justify-content: center;
 }
-
 .cell {
     width: 120px;
     height: 120px;
@@ -56,15 +54,12 @@ h1 {
     background: #e0e0e0;
     transform: scale(1.05);
 }
-
 .cell.x {
     color: #e74c3c;
 }
-
 .cell.o {
     color: #3498db;
 }
-
 .cell.winner {
     background: #2ecc71 !important;
     color: white;
