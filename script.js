@@ -106,6 +106,7 @@ if (checkWinner('X')) return depth - 10;
             }
         }
         return minScore;
+  
     }
 }
 
