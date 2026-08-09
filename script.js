@@ -119,6 +119,7 @@ function aiMove() {
     currentPlayer = 'X';
     updateStatus();
 }
+
 function restartGame() {
     board.fill(null);
     currentPlayer = 'X';
@@ -128,6 +129,7 @@ function restartGame() {
         cell.textContent = '';
         cell.className = 'cell';
     });
+    
 }
 cells.forEach(cell => cell.addEventListener('click', handleClick));
 restartBtn.addEventListener('click', restartGame);
