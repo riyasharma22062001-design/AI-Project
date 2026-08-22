@@ -1,5 +1,6 @@
 const board = Array(9).fill(nul);
 let currentPlayer = 'X'; 
+
 let gameActive = true;
 let status = document.getElementById('status');
 let cells = document.querySelectorAll('.cell');
@@ -7,6 +8,7 @@ let restartBtn = document.getElementById('restart');
 const winningConditions = [
     [0, 1, 2], [3, 4, 5], [6, 7, 8], // rows
     [0, 3, 6], [1, 4, 7], [2, 5, 8], // cols
+    
     [0, 4, 8], [2, 4, 6] 
 ];
 function checkWinner(player) {
@@ -17,6 +19,7 @@ function checkWinner(player) {
 function isTie() {
     return board.every(cell => cell !== null);
 }
+
 function updateStatus() {
     if (!gameActive) return;
     if (checkWinner('X')) {
@@ -37,7 +40,6 @@ function updateStatus() {
         setTimeout(aiMove, 500); // Slight delay for UX
     }
 }
-
 function highlightWinner(player)
 {
     for (let condition of winningConditions) {
