@@ -111,7 +111,6 @@ if (checkWinner('X')) return depth - 10;
   
     }
 }
-
 function aiMove() {
     if (!gameActive || currentPlayer !== 'O') return;
     const moveIndex = bestMove();
@@ -121,7 +120,6 @@ function aiMove() {
     currentPlayer = 'X';
     updateStatus();
 }
-
 function restartGame() {
     board.fill(null);
     currentPlayer = 'X';
@@ -130,8 +128,7 @@ function restartGame() {
     cells.forEach(cell => {
         cell.textContent = '';
         cell.className = 'cell';
-    });
-    
+    }); 
 }
 cells.forEach(cell => cell.addEventListener('click', handleClick));
 restartBtn.addEventListener('click', restartGame);
