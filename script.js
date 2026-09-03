@@ -11,13 +11,11 @@ const winningConditions = [
 ];
 function checkWinner(player) {
     return winningConditions.some(condition => {
-        return condition.every(index => board[index] === player);
-        
+        return condition.every(index => board[index] === player);  
     });
 }
 function isTie() {
-    return board.every(cell => cell !== null);
-    
+    return board.every(cell => cell !== null);    
 }
 function updateStatus() {
     if (!gameActive) return;
