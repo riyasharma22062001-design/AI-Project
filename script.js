@@ -12,10 +12,12 @@ const winningConditions = [
 function checkWinner(player) {
     return winningConditions.some(condition => {
         return condition.every(index => board[index] === player);
+        
     });
 }
 function isTie() {
     return board.every(cell => cell !== null);
+    
 }
 function updateStatus() {
     if (!gameActive) return;
@@ -35,6 +37,7 @@ function updateStatus() {
     } else {
         status.textContent = 'AI thinking...';
         setTimeout(aiMove, 500); // Slight delay for UX
+        
     }
 }
 function highlightWinner(player)
@@ -55,6 +58,7 @@ function handleClick(e) {
     cell.classList.add('x');
     currentPlayer = 'O';
     updateStatus();
+    
 }
 function bestMove() {
     let bestScore = -Infinity;
