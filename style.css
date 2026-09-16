@@ -8,8 +8,6 @@ body
     min-height: 100vh;
     margin: 0;
 }
-
-
 .container {
     text-align: center;
     background: white;
@@ -18,13 +16,11 @@ body
     box-shadow: 0 20px 40px rgba(0,0,0,0.1);
     
 }
-h1 {
-    
+h1 {    
     color: #333;
     margin-bottom: 1rem;
     
 }
-
 #status {
     font-size: 1.5rem;
     font-weight: bold;
@@ -32,8 +28,7 @@ h1 {
     margin-bottom: 1rem;
     
 }
-#board {
-    
+#board {    
     display: grid;
     grid-template-columns: repeat(3, 120px);
     grid-gap: 10px;
