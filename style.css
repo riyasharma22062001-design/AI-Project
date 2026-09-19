@@ -1,5 +1,7 @@
 body 
+
 {
+    
     font-family: Arial, sans-serif;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     display: flex;
@@ -7,7 +9,9 @@ body
     align-items: center;
     min-height: 100vh;
     margin: 0;
+    
 }
+
 .container {
     text-align: center;
     background: white;
@@ -16,12 +20,14 @@ body
     box-shadow: 0 20px 40px rgba(0,0,0,0.1);
     
 }
-h1 {    
+h1
+{    
     color: #333;
     margin-bottom: 1rem;
     
 }
-#status {
+#status
+{
     font-size: 1.5rem;
     font-weight: bold;
     color: #667eea;
