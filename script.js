@@ -5,7 +5,6 @@ let status = document.getElementById('status');
 let cells = document.querySelectorAll('.cell');
 let restartBtn = document.getElementById('restart');
 
-
 const winningConditions = [
     [0, 1, 2], [3, 4, 5], [6, 7, 8], // rows
     [0, 3, 6], [1, 4, 7], [2, 5, 8], // cols  
@@ -13,7 +12,6 @@ const winningConditions = [
 
     
 ];
-
 
 function checkWinner(player) {
     return winningConditions.some(condition => {
@@ -25,8 +23,7 @@ function checkWinner(player) {
 
 function isTie() {
     
-    return board.every(cell => cell !== null); 
-    
+    return board.every(cell => cell !== null);     
 }
 
 function updateStatus() {
@@ -60,7 +57,6 @@ function highlightWinner(player)
         }
     }
 }
-
 function handleClick(e) {
     const cell = e.target;
     const index = cell.dataset.index;
@@ -69,8 +65,7 @@ function handleClick(e) {
     cell.textContent = 'X';
     cell.classList.add('x');
     currentPlayer = 'O';
-    updateStatus();
-    
+    updateStatus();    
 }
 
 function bestMove() {
