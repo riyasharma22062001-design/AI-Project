@@ -5,7 +5,6 @@ let status = document.getElementById('status');
 let cells = document.querySelectorAll('.cell');
 let restartBtn = document.getElementById('restart');
 
-
 const winningConditions = [
     [0, 1, 2], [3, 4, 5], [6, 7, 8], // rows
     [0, 3, 6], [1, 4, 7], [2, 5, 8], // cols  
@@ -19,8 +18,6 @@ function checkWinner(player) {
         
     });
 }
-
-
 function isTie() {   
     return board.every(cell => cell !== null);     
 }
@@ -63,8 +60,7 @@ function handleClick(e) {
     cell.textContent = 'X';
     cell.classList.add('x');
     currentPlayer = 'O';
-    updateStatus();   
-    
+    updateStatus();       
 }
 function bestMove() {
     let bestScore = -Infinity;
