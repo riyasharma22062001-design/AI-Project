@@ -1,5 +1,6 @@
 body 
 {  
+    
     font-family: Arial, sans-serif;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     display: flex;
@@ -9,18 +10,22 @@ body
     margin: 0;
     
 }
+
 .container {
     text-align: center;
     background: white;
     padding: 2rem;
     border-radius: 20px;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.1);    
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);  
+    
 }
-h1{    
+h1{   
+    
     color: #333;
     margin-bottom: 1rem;    
 }
 #status{
+    
     font-size: 1.5rem;
     font-weight: bold;
     color: #667eea;
@@ -34,6 +39,7 @@ h1{
     justify-content: center;
 }
 .cell {
+    
     width: 120px;
     height: 120px;
     background: #f0f0f0;
